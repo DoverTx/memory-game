@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="memory-game.css" />
+  </head>
+  <body>
+    <h1 class="page-title">Memory Game!</h1>
+    <div class="overlay-text visible start">
+      Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text start">
+      GAME OVER
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="winner-text" class="overlay-text start">
+      WINNER!
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <!-- game Stats -->
+    <div id="game"  class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">
+           Time left: <span id="time-remaining">99</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
+      </div>
+
+      <!-- Game Starts here... Div's added after -->
+    </div>
+    <script src="memory-game.js"></script>
+  </body>
+</html>

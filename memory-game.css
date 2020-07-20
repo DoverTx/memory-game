@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background: radial-gradient(lightblue, lightgreen);
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: serif;
+  color: blue;
+  font-size: 4em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+
+.page-title {
+  color: #FF6D00;
+  font-family: serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3em;
+}
+
+.card {
+  position: relative;
+  border: 1px solid black;
+  margin: 10px;
+  height: 175px;
+  width: 125px;
+  display: inline-block; 
+}
+
+
+.overlay-text {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: red;
+  font-size: 1.7em;
+  font-family: serif;
+}
+/* */
+.overlay-text-small {
+  font-size: .8em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+}
+
